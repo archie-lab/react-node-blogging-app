@@ -1,0 +1,1 @@
+Simple blogging app based on React JS and Node.
