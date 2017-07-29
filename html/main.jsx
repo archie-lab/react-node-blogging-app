@@ -78,7 +78,12 @@ class Signup extends React.Component {
 
   signUp(e) {
     e.preventDefault();
-    alert('Sungup'); // TODO
+    axios.post('/signup', {
+      name: this.state.name,
+      email: this.state.email,
+      password: this.state.password
+    }).then((response) => console.log(response))
+        .catch((error) => console.log(error));
   }
 
   render() {
