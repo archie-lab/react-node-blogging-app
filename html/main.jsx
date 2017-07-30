@@ -26,7 +26,12 @@ class Signin extends React.Component {
     axios.post('/signin', {
       email: this.state.email,
       password: this.state.password
-    }).then((response => console.log(response)))
+    }).then((response => {
+      console.log(response)
+      if (response.data = 'success') {
+        window.location.assign('http://localhost:7777/home'); //yeah, I know...
+      }
+    }))
         .catch((error) => console.log(error));
   }
 
@@ -89,7 +94,7 @@ class Signup extends React.Component {
   render() {
     return (
         <form className="signin-form">
-          <h2 className="signin-form-heading">Please sign in</h2>
+          <h2 className="signin-form-heading">Please sign up</h2>
           <label htmlFor="signinName" className="sr-only">Username</label>
           <input id="signinName"
                  className="form-control"

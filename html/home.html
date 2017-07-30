@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blogging app</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-router/3.0.3/ReactRouter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.25.0/babel.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="header clearfix">
+        <nav>
+            <ul class="nav nav-pills pull-right">
+                <li role="presentation" id="homeHyperlink" class="active"><a href="#">Home</a></li>
+                <li role="presentation" id="addPostHyperlink"><a href="/home#/posts/add">Add</a></li>
+                <li role="presentation"><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+        <h3 class="text-muted">Blogging app</h3>
+
+        <div id="app" class="container">
+
+        </div>
+
+        <footer class="footer">
+            <p>&copy; 2017 Company, Inc.</p>
+        </footer>
+    </div>
+</div>
+<script type="text/babel" src="home.jsx"></script>
+</body>
+</html>
