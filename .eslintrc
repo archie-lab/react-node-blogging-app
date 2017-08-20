@@ -1,0 +1,39 @@
+{
+  "extends": [
+    "standard",
+    "standard-react"
+  ],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module",
+    "allowImportExportEverywhere": false,
+    "codeFrame": false
+  },
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "plugins": [
+    "babel",
+    "react",
+    "standard",
+    "import"
+  ],
+  "rules": {
+    "semi": 0,
+    "space-before-function-paren": 0,
+    "no-labels": 0,
+    "jsx-quotes": [2, "prefer-double"],
+    "max-len": [2, 120, 2],
+    "indent": 0,
+    "react/jsx-indent-props": 0,
+    "react/prop-types": 1,
+    "react/react-in-jsx-scope": 1,
+    "standard/no-callback-literal": 1,
+    "handle-callback-err": 1,
+    "comma-dangle": 2,
+    "no-path-concat": 1,
+    "no-undef": 1
+  }
+}
